@@ -1,0 +1,161 @@
+html,body{
+    max-height: 505px;
+    overflow-y: auto;
+    }
+h1{
+    font-size: 32px;
+    background-color: black;
+    background-image: linear-gradient(45deg, #000000, #DAA520);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    font-family: CircularStd,sans-serif;
+}
+html{
+    background-color: #FAF9F6;
+    width: 400px;
+}
+body{
+    width: 380px;
+}
+p{
+    font-size: 18px;
+    text-align: right;
+    font-family: 'Noto Sans Hebrew', sans-serif;
+    direction: rtl; 
+    padding-right: 5px;
+}
+#heading-container{
+    text-align: center;
+}
+#scrape{
+    align-items: center;
+    appearance: none;
+    background-color: black;
+    background-image: linear-gradient(45deg, #000000, #DAA520 99%);
+    background-size: calc(100% + 20px) calc(100% + 20px);
+    border-radius: 100px;
+    border-width: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: CircularStd,sans-serif;
+    font-size: 1.25rem;
+    height: auto;
+    justify-content: center;
+    line-height: 1.5;
+    padding: 3px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .2s,background-position .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+}
+#scrape:active, #scrape:focus {
+    outline: none;
+}
+#scrape:hover {
+    background-position: -20px -20px;
+}
+#scrape:focus:not(:active) {
+    box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
+/* style.css */
+.loading {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #ccc;
+    border-top: 3px solid #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-right: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#para {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Summary content styling */
+.summary-content {
+    width: 100%;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.summary-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.summary-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.summary-stats {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    padding: 8px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+.summary-stats small {
+    display: block;
+    margin: 2px 0;
+}
+
+/* Error styling */
+.error {
+    width: 100%;
+    padding: 15px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 8px;
+    color: #721c24;
+}
+
+.error h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.error p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.error small {
+    font-size: 12px;
+    color: #6c757d;
+}
